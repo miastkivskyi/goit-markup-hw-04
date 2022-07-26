@@ -165,6 +165,7 @@ img {
 }
 
 .hero {
+  background-color: var(--background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
