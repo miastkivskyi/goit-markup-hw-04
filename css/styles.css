@@ -13,6 +13,7 @@ body {
   --button-back-color: #188ce8;
   --button-basis: #f5f4fa;
   --shadow-color: rgba(0, 0, 0, 0.15);
+  --color-lotypes: #afb1b8;
 }
 
 .list {
@@ -47,7 +48,7 @@ img {
   height: auto;
 }
 
-/*site nav*/
+/************************site nav***********************/
 .header {
   border: 1px solid #ececec;
 }
@@ -139,7 +140,7 @@ img {
   color: var(--logo-color);
 }
 
-/*main*/
+/*************************main****************************/
 .section-team,
 .section-examples,
 .section-sample {
@@ -240,7 +241,7 @@ img {
   margin-top: 0px;
 }
 
-/*Portfolio*/
+/*************************Portfolio****************************/
 .section-paragraph {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -263,7 +264,7 @@ img {
 .additional .btn:not(:last-child) {
   margin-right: 8px;
 }
-/*footer*/
+/***********************footer**********************************/
 
 .visually-hidden {
   position: absolute;
@@ -328,7 +329,7 @@ img {
   margin-bottom: 9px;
 }
 
-/*button*/
+/**********************button***************************/
 
 .button-studio {
   color: var(--primary-white-color);
@@ -444,7 +445,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-/*ICONS*/
+/********************ICONS*****************************/
 
 .data {
   display: flex;
@@ -481,4 +482,46 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+/************************COMPANY*************************/
+.clients {
+  color: var(--section-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
+.logotype {
+  display: flex;
+}
+.company {
+  fill: var(--color-lotypes);
+  background-position: center;
+  align-items: center;
+}
+
+.customers {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-lotypes);
+  border-radius: 4px;
+  margin-bottom: 94px;
+  margin-right: 30px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.customers:not(:last-child) {
+  margin-right: 30px;
+}
+
+.comp-item:hover,
+.comp-item:focus {
+  color: var(--logo-color);
 }
