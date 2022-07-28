@@ -465,3 +465,20 @@ img {
   background-position: center;
   background-size: contain;
 }
+
+.features-bckg {
+  background: var(--button-basis);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.icon-mini {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
