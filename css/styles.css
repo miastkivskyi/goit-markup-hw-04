@@ -540,31 +540,30 @@ img {
   text-transform: uppercase;
 }
 
-.footer-icon {
-  fill: var(--color-lotypes);
-}
 .footer-soc {
   display: flex;
   gap: 10px;
 }
 
 .footer-soc-link {
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-white-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-item:hover,
-.footer-item:focus {
-  fill: var(--logo-color);
+.footer-icon:hover,
+.footer-icon:focus {
+  color: var(--logo-color);
   transition: 250ms;
 }
 
+.footer-icon {
+  fill: currentColor;
+}
 .footer-cont {
   display: flex;
   align-items: baseline;
