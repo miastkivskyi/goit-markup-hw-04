@@ -553,14 +553,22 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  color: var(--primary-white-color);
 }
 
 .footer-icon:hover,
 .footer-icon:focus {
-  color: var(--logo-color);
+  color: var(--primary-white-color);
   transition: 250ms;
-  border-color: var(--logo-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--logo-color);
 }
 
 .footer-icon {
@@ -579,6 +587,16 @@ img {
   justify-content: center;
 }
 
+.name-item {
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .name-list {
   display: flex;
   align-items: center;
@@ -589,10 +607,6 @@ img {
 
 .name-link {
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .name-icon-in {
@@ -613,15 +627,24 @@ img {
   fill: #afb1b8;
 }
 
-.name-item {
-  background-color: var(--primary-white-color);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-}
-
 .name-item:hover,
 .name-item:focus {
   background-color: var(--logo-color);
-  transition: 250ms;
+  color: #ffffff;
+}
+
+.name-item .name-icon-tw:hover,
+.name-item .name-icon-tw:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--logo-color);
+}
+
+.name-icon-in:hover,
+.name-icon-in:focus {
+  fill: var(--primary-white-color);
+}
+
+.name-icon-f:hover,
+.name-icon-f:focus {
+  fill: var(--primary-white-color);
 }
