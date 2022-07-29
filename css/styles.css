@@ -59,6 +59,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
 }
 
 .logo {
@@ -559,6 +560,7 @@ img {
 .footer-icon:focus {
   color: var(--logo-color);
   transition: 250ms;
+  border-color: var(--logo-color);
 }
 
 .footer-icon {
@@ -567,4 +569,59 @@ img {
 .footer-cont {
   display: flex;
   align-items: baseline;
+}
+
+/*-----------------------NAME-ICON---------------------------*/
+
+.name-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.name-link {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.name-icon-in {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.name-icon-tw {
+  width: 20px;
+  height: 16px;
+  fill: #afb1b8;
+}
+
+.name-icon-f {
+  width: 10px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.name-item {
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.name-item:hover,
+.name-item:focus {
+  background-color: var(--logo-color);
+  transition: 250ms;
 }
