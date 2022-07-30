@@ -240,6 +240,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0px;
+  margin-bottom: 16px;
 }
 
 /*************************Portfolio****************************/
@@ -362,8 +363,6 @@ img {
   letter-spacing: 0.03em;
   background-color: var(--button-basis);
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
@@ -371,9 +370,11 @@ img {
 }
 
 .button-portfolio:hover,
-.button-portfolio:focus {
+.button-portfolio:focus{
   color: var(--primary-white-color);
   background-color: var(--logo-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .element:nth-child(3n) {
@@ -391,6 +392,9 @@ img {
   margin-right: 30px;
 }
 
+.serv-text{
+  text-decoration:none;
+}
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -410,7 +414,8 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
-  border-top: none;
+  border-top: none;\
+  text-decoration: none;
 }
 
 .section-name {
@@ -475,8 +480,9 @@ img {
   height: 120px;
   margin: 0px;
   margin-bottom: 30px;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-mini {
@@ -494,37 +500,39 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 
 .logotype {
   display: flex;
+  gap: 30px;
 }
 
 .customers-link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-lotypes);
-  fill: var(--color-lotypes);
+  color: var(--color-lotypes);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
-  margin-bottom: 94px;
   background-position: center;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+}
+
+.customers-icon{
+  fill: currentColor;
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--logo-color);
   color: var(--logo-color);
+  border: 1px solid var(--logo-color);
 }
 
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*------------------footer icon--------------*/
 
 .footer-box2 {
@@ -581,22 +589,6 @@ img {
 
 /*-----------------------NAME-ICON---------------------------*/
 
-.name-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.name-item {
-  background-color: var(--primary-white-color);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  margin-top: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .name-list {
   display: flex;
   align-items: center;
@@ -606,45 +598,41 @@ img {
 }
 
 .name-link {
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.name-icon-f,
+.name-icon-in,
+.name-icon-tw{
+  fill: currentColor;
 }
 
 .name-icon-in {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+ 
 }
 
 .name-icon-tw {
   width: 20px;
   height: 16px;
-  fill: #afb1b8;
+  
 }
 
 .name-icon-f {
   width: 10px;
   height: 20px;
-  fill: #afb1b8;
+  
 }
 
-.name-item:hover,
-.name-item:focus {
-  background-color: var(--logo-color);
-  color: #ffffff;
-}
-
-.name-item .name-icon-tw:hover,
-.name-item .name-icon-tw:focus {
-  fill: var(--primary-white-color);
+.name-link:hover {
+  color:var(--primary-white-color);
   background-color: var(--logo-color);
 }
 
-.name-icon-in:hover,
-.name-icon-in:focus {
-  fill: var(--primary-white-color);
-}
-
-.name-icon-f:hover,
-.name-icon-f:focus {
-  fill: var(--primary-white-color);
-}
