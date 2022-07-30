@@ -373,15 +373,15 @@ img {
 .button-portfolio:focus{
   color: var(--primary-white-color);
   background-color: var(--logo-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
 
 .element:nth-child(3n) {
   margin-right: 0;
 }
 
-.element:hover {
+.serv-text:hover {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -394,7 +394,9 @@ img {
 
 .serv-text{
   text-decoration:none;
+  
 }
+
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -487,8 +489,6 @@ img {
 
 .icon-mini {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /************************COMPANY*************************/
@@ -526,7 +526,7 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   color: var(--logo-color);
-  border: 1px solid var(--logo-color);
+  border-color: var(--logo-color);
 }
 
 .regular-customers {
